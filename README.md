@@ -2,9 +2,11 @@
 
 ## Goal
 
-Install all zsh related plugin needs google around many place. This script will install necessary fancy zsh and its plugin
+Install all zsh related plugin needs googling around. This script will install necessary fancy zsh and its plugin
 
 ## Steps
+
+1. Run script
 
 ```sh
 git clone https://github.com/lubronzhan/zsh-setup.git
@@ -15,3 +17,9 @@ cd zsh-setup
 cd -
 rm -rf zsh-setup
 ```
+
+2. Manual step
+
+*  Change the font
+
+   * iTerm -> Preference -> Profiles -> Default profile -> Font -> Change font -> `Meslo LG M Regular for Powerline`

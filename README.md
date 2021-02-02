@@ -6,7 +6,7 @@ Install all zsh related plugin needs google around many place. This script will 
 
 ## Steps
 
-sh```
+```sh
 git clone https://github.com/lubronzhan/zsh-setup.git
 ## install
 cd zsh-setup

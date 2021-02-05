@@ -11,7 +11,7 @@ chsh -s $(which zsh)
 
 
 
-
+echo ""
 echo "###########################################"
 echo "Install powerline font"
 echo "Don't forgot to change font to 'Meslo LG M Regular for Powerline' and Set color preset to 'Solarized Dark'"
@@ -26,7 +26,7 @@ rm -rf fonts
 
 
 
-
+echo ""
 echo "###########################################"
 echo "Change theme ZSH_THEME=agnoster"
 sed -i "" 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"agnoster\"/' ~/.zshrc
@@ -34,7 +34,7 @@ sed -i "" 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"agnoster\"/' ~/.zshrc
 
 
 
-
+echo ""
 echo "###########################################"
 echo "Change AUTO_SUGGESTION_HIGHLIGHT_COLOR"
 echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'" >> ~/.zshrc
@@ -42,7 +42,7 @@ echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'" >> ~/.zshrc
 
 
 
-
+echo ""
 echo "###########################################"
 echo "Install fzf..."
 echo "For show history by using ^r"
@@ -58,7 +58,7 @@ fi
 
 
 
-
+echo ""
 echo "###########################################"
 echo "Install antigen"
 if [ ! -d ~/antigen ]; then
@@ -86,7 +86,7 @@ antigen apply
 EOF
 
 
-
+echo ""
 echo "###########################################"
 echo "Change DEFAULT_USER to only contain username"
 echo "DEFAULT_USER=$USER" >> ~/.zshrc
@@ -97,3 +97,4 @@ echo "Installation is done. "
 echo "Don't forgot to change font to 'Meslo LG M Regular for Powerline' and"
 echo "Set color preset to 'Solarized Dark' in your iTerm!"
 echo "run 'source ~/.zshrc'"
+echo "run 'fzf'. It requires some permissions to work"

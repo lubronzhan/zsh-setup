@@ -45,7 +45,7 @@ echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'" >> ~/.zshrc
 echo ""
 echo "###########################################"
 echo "Install fzf..."
-echo "For show history by using ^r"
+echo "For show command history by using ^r"
 cat >> ~/.zshrc <<EOF
 ## fzf
 ## fzf show full screen by default. This one shows 40% of the screen
@@ -93,7 +93,8 @@ echo "DEFAULT_USER=$USER" >> ~/.zshrc
 
 
 
-echo "Installation is done. "
+echo "########### Installation is done #############"
+echo "########### Manual work          #############"
 echo "Don't forgot to change font to 'Meslo LG M Regular for Powerline' and"
 echo "Set color preset to 'Solarized Dark' in your iTerm!"
 echo "run 'source ~/.zshrc'"

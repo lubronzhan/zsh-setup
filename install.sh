@@ -92,9 +92,23 @@ echo "Change DEFAULT_USER to only contain username"
 echo "DEFAULT_USER=$USER" >> ~/.zshrc
 
 
+echo ""
+echo "###########################################"
+echo "Install font"
+git clone git@github.com:powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
 
+
+
+echo "##############################################"
 echo "########### Installation is done #############"
 echo "########### Manual work          #############"
+echo "##############################################"
 echo "Don't forgot to change font to 'Meslo LG M Regular for Powerline' and"
 echo "Set color preset to 'Solarized Dark' in your iTerm!"
 echo "run 'source ~/.zshrc'"

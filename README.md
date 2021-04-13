@@ -9,7 +9,7 @@ Install all zsh related plugin needs googling around. This script will install n
 1. Run script
 
 ```sh
-git clone https://github.com/lubronzhan/zsh-setup.git
+git clone git@github.com:lubronzhan/zsh-setup.git
 ## install
 cd zsh-setup
 ./install
@@ -22,4 +22,4 @@ rm -rf zsh-setup
 
 *  Change the font
 
-   * iTerm -> Preference -> Profiles -> Default profile -> Font -> Change font -> `Meslo LG M Regular for Powerline`
+   * iTerm -> Preference -> Profiles -> Default profile -> Text -> Font -> Change font -> `Meslo LG M Regular for Powerline`

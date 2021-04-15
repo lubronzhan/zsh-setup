@@ -104,6 +104,14 @@ fi
 ~/.fzf/install
 
 
+
+echo ""
+echo "GOPROXY"
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+
+
+
 echo "##############################################"
 echo "########### Installation is done #############"
 echo "########### Manual work          #############"
@@ -112,3 +120,4 @@ echo "Don't forgot to change font to 'Meslo LG M Regular for Powerline' and"
 echo "Set color preset to 'Solarized Dark' in your iTerm!"
 echo "run 'source ~/.zshrc'"
 echo "run 'fzf'. It requires some permissions to work"
+

@@ -41,23 +41,6 @@ echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'" >> ~/.zshrc
 
 
 
-
-echo ""
-echo "###########################################"
-echo "Install fzf..."
-echo "For show command history by using ^r"
-cat >> ~/.zshrc <<EOF
-## fzf
-## fzf show full screen by default. This one shows 40% of the screen
-export FZF_DEFAULT_OPTS='--height 40%'
-EOF
-if ! [ -d ~/.fzf ]; then
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-fi
-~/.fzf/install
-
-
-
 echo ""
 echo "###########################################"
 echo "Install antigen"
@@ -89,6 +72,7 @@ EOF
 echo ""
 echo "###########################################"
 echo "Change DEFAULT_USER to only contain username"
+echo "Change DEFAULT_USER to only contain username">> ~/.zshrc
 echo "DEFAULT_USER=$USER" >> ~/.zshrc
 
 
@@ -103,6 +87,21 @@ cd fonts
 cd ..
 rm -rf fonts
 
+
+
+echo ""
+echo "###########################################"
+echo "Install fzf..."
+echo "For show command history by using ^r"
+cat >> ~/.zshrc <<EOF
+## fzf
+## fzf show full screen by default. This one shows 40% of the screen
+export FZF_DEFAULT_OPTS='--height 40%'
+EOF
+if ! [ -d ~/.fzf ]; then
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+fi
+~/.fzf/install
 
 
 echo "##############################################"

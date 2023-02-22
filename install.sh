@@ -102,6 +102,7 @@ git config --global alias.co checkout
 git config --global alias.di diff
 git config --global alias.lo log --oneline
 git config --global alias.st status
+git config --global alias.cm commit
 
 
 echo "##############################################"

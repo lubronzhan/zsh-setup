@@ -72,21 +72,7 @@ EOF
 echo ""
 echo "###########################################"
 echo "Change DEFAULT_USER to only contain username"
-echo "Change DEFAULT_USER to only contain username">> ~/.zshrc
 echo "DEFAULT_USER=$USER" >> ~/.zshrc
-
-
-echo ""
-echo "###########################################"
-echo "Install font"
-git clone git@github.com:powerline/fonts.git --depth=1
-# install
-cd fonts
-./install.sh
-# clean-up a bit
-cd ..
-rm -rf fonts
-
 
 
 echo ""
@@ -104,15 +90,7 @@ fi
 ~/.fzf/install
 
 
-
 echo ""
-echo "GOPROXY"
-export GO111MODULE=on
-export GOPROXY=https://goproxy.cn
-
-
-
-eccho ""
 echo "git"
 git config --global alias.aa add --all
 git config --global alias.bv branch -vv
@@ -135,3 +113,4 @@ echo "Set color preset to 'Solarized Dark' in your iTerm!"
 echo "run 'source ~/.zshrc'"
 echo "run 'fzf'. It requires some permissions to work"
 
+source ~/.bashrc

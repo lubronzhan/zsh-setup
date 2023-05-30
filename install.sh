@@ -113,5 +113,9 @@ echo "Don't forgot to change font to 'Meslo LG M Regular for Powerline' and"
 echo "Set color preset to 'Solarized Dark' in your iTerm!"
 echo "run 'source ~/.zshrc'"
 echo "run 'fzf'. It requires some permissions to work"
+echo "Need to change keyboard setting Settings... > Profiles > Keys > Key Mappings > +"
+echo "Add Keyboard shortcut: ^-> . Action: Send Escape Sequence. Esc+ '[1;5C'
+echo "Add Keyboard shortcut: ^<- . Action: Send Escape Sequence. Esc+ '[1;5D"
+echo ""
 
 source ~/.bashrc
